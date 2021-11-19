@@ -356,7 +356,7 @@ body {
   margin: auto;
 }
 
-.header-top {
+.navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,7 +369,7 @@ body {
   padding: 40px 0;
 }
 
-.header__search {
+.navbar__search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,6 +382,29 @@ body {
   border-radius: 6px;
   overflow: hidden;
   margin-left: 108px;
+}
+
+.navbar-bottom {
+  background-color: #0A223D;
+  padding: 31px 0;
+}
+
+.navbar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-menu__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .search__input {
