@@ -648,8 +648,10 @@ img {
     height: 1px;
     background-color: #0A223D;
   }
-  .hotel__info {
+  .hotel__wrap {
     position: relative;
+  }
+  .hotel__info {
     padding: 35px 0 20px 0;
   }
   .hotel__block {
@@ -668,9 +670,6 @@ img {
 @media (max-width: 576px) {
   .hotel__rattings {
     display: none;
-  }
-  .hotel__subtitle {
-    max-width: 280px;
   }
 }
 /*# sourceMappingURL=style.css.map */
