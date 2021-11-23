@@ -410,6 +410,9 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .navbar-menu__link {
@@ -597,6 +600,10 @@ img {
   .navbar-top {
     padding: 30px 0;
   }
+  .navbar-menu {
+    max-width: 95%;
+    margin: 0 auto;
+  }
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
@@ -605,7 +612,7 @@ img {
     padding: 22px 0;
   }
   .navbar__search {
-    margin-left: auto;
+    margin-left: 47px;
   }
   .search__input {
     width: 340px;
@@ -615,7 +622,7 @@ img {
 @media (max-width: 768px) {
   .container {
     max-width: 567px;
-    width: 92%;
+    width: 90%;
   }
   .navbar-bottom, .navbar__user, .navbar__search {
     display: none;
