@@ -41,7 +41,7 @@
         height: 1px
         background-color: $dark
   .hotel
-    &__wrap
+    &__top
       position: relative
     &__info
       padding: 35px 0 20px 0
@@ -53,7 +53,15 @@
       position: absolute
       right: 0
       top: 5px
+    &-bottom
+      &__slider
+        width: 100%
+  .swiper
+    height: 100%
 @media (max-width: 576px)
   .hotel
     &__rattings
+      display: none
+  .slider
+    &-button
       display: none

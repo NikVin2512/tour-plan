@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Best Tour Plan - Hotel Booking</title>
   </head>
@@ -91,7 +92,7 @@
     </section>
     <section class="hotel">
       <div class="container">
-        <div class="hotel__wrap">
+        <div class="hotel-top hotel__top">
           <div class="hotel__info">
             <div class="hotel__star">
               <img src="img/star.png" alt="Star" class="hotel__img" />
@@ -118,7 +119,41 @@
             </div>
           </div>
         </div>
+        <div class="hotel-bottom">
+          <div class="hotel-bottom__slider">
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="img/img-1.jpg" alt="Tour" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/img-2.jpg" alt="Tour" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/img-3.jpg" alt="Tour" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/img-4.jpg" alt="Tour" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/img-5.jpg" alt="Tour" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/img-6.jpg" alt="Tour" />
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <button class="slider-button slider-button--prev"></button>
+              <button class="slider-button slider-button--next"></button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>

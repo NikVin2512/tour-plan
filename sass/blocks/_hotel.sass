@@ -1,8 +1,9 @@
 .hotel
-  &__wrap
+  &__top
     display: flex
     justify-content: space-between
     align-items: center
+    margin-bottom: 20px
   &__info
     display: flex
     flex-direction: column
@@ -54,3 +55,44 @@
     &_size
       &_s
         font-size: 10px
+  &-bottom
+    &__slider
+      width: 728px
+.swiper
+  width: 100%
+  height: 450px
+  border-radius: 8px
+  position: relative
+  &::after
+    position: absolute
+    content: ''
+    z-index: 1
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border-radius: 8px
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+.swiper-slide
+  img
+    width: 100%
+.slider
+  &-button
+    position: absolute
+    cursor: pointer
+    width: 30px
+    height: 30px
+    z-index: 199
+    top: 50%
+    transform: translateY(-50%)
+    border: none
+    background-color: transparent
+    background-repeat: no-repeat
+    background-size: 10px
+    background-position: center
+    &--prev
+      background-image: url(../img/arrow-prev.svg)
+      left: 18px
+    &--next
+      background-image: url(../img/arrow-next.svg)
+      right: 18px
