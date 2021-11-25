@@ -1,5 +1,6 @@
 
 ymaps.ready(init);
+
 function init(){
     // Создание карты.
     var myMap = new ymaps.Map("map", {
@@ -7,9 +8,18 @@ function init(){
         // Порядок по умолчанию: «широта, долгота».
         // Чтобы не определять координаты центра карты вручную,
         // воспользуйтесь инструментом Определение координат.
-        center: [55.76, 37.64],
+        center: [55.8, 37.8],
         // Уровень масштабирования. Допустимые значения:
         // от 0 (весь мир) до 19.
-        zoom: 7
+        zoom: 17
     });
+    var myGeoObject = new ymaps.GeoObject({
+        geometry: {
+            type: "Point", // тип геометрии - точка
+            coordinates: [55.8, 37.8] // координаты точки
+        }
+    });
+    myMap.geoObjects.add(myGeoObject); 
 }
+
+
