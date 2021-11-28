@@ -8,6 +8,9 @@
       &__img
         height: 100%
         object-fit: cover
+  .card
+    width: 230px
+    height: 230px
 @media (max-width: 992px)
   .container, .newsletter__wrap
     max-width: 700px
@@ -58,6 +61,14 @@
         left: 0
       &__next
         right: 0
+  .activities
+    &__cards
+      flex-wrap: wrap
+      grid-gap: 25px
+  .card
+    flex-basis: 48%
+    height: 250px
+
 @media (max-width: 768px)
   .container, .newsletter__wrap
     max-width: 567px
@@ -114,6 +125,12 @@
         left: 30%
       &__next
         right: 30%
+  .activities
+    &__cards
+      grid-gap: 20px
+  .card
+    &-title
+      max-width: 85%
 @media (max-width: 600px)
   &-button
     &__prev
@@ -144,6 +161,10 @@
         left: 25%
       &__next
         right: 25%
+  .card
+    flex-basis: 100%
+    &__image
+      width: 100%
 @media (max-width: 480px)
   .newsletter
     &__wrap
