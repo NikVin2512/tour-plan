@@ -45,6 +45,18 @@
         width: 340px
     &-map
       width: 340px
+  .reviews
+    &-slider
+      &__item
+        max-width: 579px
+        padding: 50px 64px 30px 60px
+    &-button
+      top: 50%
+      transform: translateY(-50%)
+      &__prev
+        left: 0
+      &__next
+        right: 0
 @media (max-width: 768px)
   .container, .newsletter__wrap
     max-width: 567px
@@ -90,6 +102,22 @@
     &__wrap
       flex-direction: column
       align-items: flex-start
+  .reviews
+    &-title
+      font-size: 30px
+    &-button
+      top: 26%
+      transform: translateY(-74%)
+      &__prev
+        left: 30%
+      &__next
+        right: 30%
+@media (max-width: 600px)
+  &-button
+    &__prev
+      left: 25%
+      &__next
+        right: 25%
 @media (max-width: 576px)
   .hotel
     &__rattings
@@ -104,10 +132,27 @@
       &--next
         right: 6px
   .swiper
-    height: 179px
+    &-hotel
+      height: 179px
+  .reviews
+    &-title
+      font-size: 25px
+    &-button
+      &__prev
+        left: 25%
+      &__next
+        right: 25%
 @media (max-width: 480px)
   .newsletter
     &__wrap
       padding: 73px 0 83px 0
     &__search
       width: 280px
+  .reviews
+    &-title
+      font-size: 18px
+    &-button
+      &__prev
+        left: 15%
+      &__next
+        right: 15%
