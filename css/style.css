@@ -792,6 +792,10 @@ body {
   position: relative;
 }
 
+.swiper-hotel__slide img {
+  max-width: 100%;
+}
+
 .swiper-hotel__slide::after {
   position: absolute;
   content: '';
