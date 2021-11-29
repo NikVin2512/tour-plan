@@ -1145,6 +1145,7 @@ body {
 }
 
 .card__button {
+  cursor: pointer;
   position: relative;
   z-index: 5;
   font-weight: 600;
@@ -1428,6 +1429,15 @@ body {
   }
   .reviews-button__next {
     right: 15%;
+  }
+  .activities {
+    padding-top: 1px;
+  }
+  .activities__cards {
+    margin-top: 36px;
+  }
+  .activities-title {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
