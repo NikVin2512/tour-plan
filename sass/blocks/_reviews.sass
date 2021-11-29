@@ -22,6 +22,26 @@
       padding: 50px 95px 30px 99px
       background: #FFFFFF
       border-radius: 8px
+      &::after
+        content: ''
+        position: absolute
+        top: 13px
+        left: 64px
+        width: 70px
+        height: 50px
+        background-image: url(../img/bg-reviews-left.svg)
+        background-repeat: no-repeat
+        background-size: contain
+      &::before
+        content: ''
+        position: absolute
+        top: 118px
+        right: 60px
+        width: 70px
+        height: 50px
+        background-image: url(../img/bg-reviews-right.svg)
+        background-repeat: no-repeat
+        background-size: contain
     &__profile
       display: flex
       flex-direction: column

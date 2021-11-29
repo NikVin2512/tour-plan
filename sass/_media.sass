@@ -68,6 +68,14 @@
   .card
     flex-basis: 48%
     height: 250px
+  .reviews
+    &-slider
+      &__item
+        &::after,&::before
+          display: none
+
+    &-title
+      font-size: 30px
 
 @media (max-width: 768px)
   .container, .newsletter__wrap
@@ -115,8 +123,6 @@
       flex-direction: column
       align-items: flex-start
   .reviews
-    &-title
-      font-size: 30px
     &-button
       top: 85px
       // top: 26%
@@ -156,6 +162,9 @@
   .reviews
     &-title
       font-size: 25px
+    &-slider
+      &__text
+        text-align: left
     &-button
       &__prev
         left: 25%
