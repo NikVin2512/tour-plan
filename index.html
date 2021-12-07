@@ -22,7 +22,10 @@
           <a href="#" class="horizontal-logo"
             ><img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan"
           /></a>
-          <form action="#" class="search navbar__search">
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile--hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -32,7 +35,7 @@
               <img src="img/search.svg" alt="" class="search__img" />
             </button>
           </form>
-          <div class="user navbar__user">
+          <div class="user navbar__user navbar__user--mobile--hidden">
             <img
               src="img/avatar-nathan.jpg"
               alt="avatar: Nathan"
@@ -47,9 +50,31 @@
           </button>
         </div>
       </div>
-      <nav class="navbar-bottom">
+      <nav class="navbar-bottom navbar-bottom--hidden">
         <div class="container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <div class="user navbar__user navbar__user--white-color">
+                <img
+                  src="img/avatar-nathan.jpg"
+                  alt="avatar: Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name">Nathan</span>
+              </div>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <form action="#" class="search navbar__search">
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                />
+                <button class="search__button">
+                  <img src="img/search.svg" alt="" class="search__img" />
+                </button>
+              </form>
+            </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
@@ -580,5 +605,6 @@
     </footer>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
