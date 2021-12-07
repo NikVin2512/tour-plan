@@ -1,0 +1,123 @@
+.packages
+  padding-bottom: 70px
+  &-title
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    color: #333333
+.cards-hotels
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 30px
+  &__item
+    width: 350px
+    border-radius: 8px
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    height: 500px
+    &--one
+      display: flex
+      flex-direction: row
+      width: 100%
+      grid-column-start: 1
+      grid-column-end: 3
+  &__star
+    margin-bottom: 8px
+  &__info
+    display: flex
+    flex-direction: column
+    flex-basis: 50%
+    background: #0A223D
+    color: #fff
+    padding: 30px 21px 25px 32px
+    font-size: 12px
+    font-weight: normal
+    line-height: 15px
+    flex-basis: 50%
+    &--one
+      padding: 47px 21px 30px 44px
+  &__title
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    margin: 0
+    margin-bottom: 23px
+    &--one
+      margin: 0
+      padding: 0
+  &__descp
+    font-size: 14px
+    line-height: 160.6%
+    margin: 27px 0 34px 0
+  &__img
+    max-width: 100%
+    height: 250px
+    object-fit: cover
+    &--one
+      flex-basis: 50%
+      height: 100%
+  &__address
+    position: relative
+    padding-left: 27px
+    &::after
+      content: ''
+      position: absolute
+      width: 12px
+      height: 14px
+      top: 0
+      left: 2px
+      background-image: url(../img/address.svg)
+      background-repeat: no-repeat
+  &__guest
+    position: relative
+    padding-left: 27px
+    margin: 11px 0
+    &::after
+      content: ''
+      position: absolute
+      width: 13px
+      height: 14px
+      top: 0
+      left: 0
+      background-image: url(../img/user.svg)
+      background-repeat: no-repeat
+  &__room
+    position: relative
+    padding-left: 27px
+    &::after
+      content: ''
+      position: absolute
+      width: 13px
+      height: 14px
+      top: 0
+      left: 0
+      background-image: url(../img/room.svg)
+      background-repeat: no-repeat
+  &__more
+    margin-top: 24px
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    &--one
+      margin-top: 37px
+  &__pricetag
+    &--old
+      line-height: 18px
+      text-decoration-line: line-through
+    &--new
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
+  &__btn
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    padding: 11px 27px
+    border: none
+    background: $primary
+    border-radius: 4px
+    color: #fff
+    margin-bottom: -5px
