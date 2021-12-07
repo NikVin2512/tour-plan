@@ -15,7 +15,7 @@ const sliderReviews = new Swiper('.reviews-slider', {
   slidesPerView: 1,
   // Navigation arrows
   navigation: {
-    nextEl: ' .reviews-button__next',
-    prevEl: ' .reviews-button__prev',
+    nextEl: ' .reviews-slider__button--next',
+    prevEl: ' .reviews-slider__button--prev',
   },
 });

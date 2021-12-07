@@ -127,14 +127,13 @@
       flex-direction: column
       align-items: flex-start
   .reviews
-    &-button
-      top: 85px
-      // top: 26%
-      // transform: translateY(-74%)
-      &__prev
-        left: 30%
-      &__next
-        right: 30%
+    &-slider
+      &__button
+        top: 85px
+        &--prev
+          left: 30%
+        &--next
+          right: 30%
   .activities
     &__cards
       grid-gap: 20px
@@ -165,11 +164,13 @@
     &__btn
       padding: 8px 17px
 @media (max-width: 600px)
-  &-button
-    &__prev
-      left: 25%
-      &__next
-        right: 25%
+  .reviews
+    &-slider
+      &__button
+        &--prev
+          left: 25%
+        &--next
+          right: 25%
 @media (max-width: 576px)
   .hotel
     &__rattings
@@ -237,17 +238,17 @@
       margin: auto
       line-height: 23px
     &-slider
+      &__button
+        &--prev
+          left: 15%
+        &--next
+          right: 15%
       &__item
         padding-left: 34px
         padding-right: 30px
         padding-bottom: 36px
     &-title
       font-size: 18px
-    &-button
-      &__prev
-        left: 15%
-      &__next
-        right: 15%
   .activities
     padding-top: 1px
     &__cards
