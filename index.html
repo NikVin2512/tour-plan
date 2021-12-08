@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Best Tour Plan - Hotel Booking</title>
   </head>
@@ -19,12 +20,18 @@
     <header class="navbar">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="horizontal-logo"
+          <a
+            href="#"
+            class="horizontal-logo"
+            data-aos="fade-right"
+            data-aos-delay="100"
             ><img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan"
           /></a>
           <form
             action="#"
             class="search navbar__search navbar__search--mobile--hidden"
+            data-aos="fade-right"
+            data-aos-delay="200"
           >
             <input
               type="text"
@@ -35,7 +42,11 @@
               <img src="img/search.svg" alt="" class="search__img" />
             </button>
           </form>
-          <div class="user navbar__user navbar__user--mobile--hidden">
+          <div
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <img
               src="img/avatar-nathan.jpg"
               alt="avatar: Nathan"
@@ -52,7 +63,12 @@
       </div>
       <nav class="navbar-bottom navbar-bottom--hidden">
         <div class="container">
-          <ul class="navbar-menu">
+          <ul
+            class="navbar-menu"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <li class="navbar-menu__item navbar-menu__item--mobile--visible">
               <div class="user navbar__user navbar__user--white-color">
                 <img
@@ -126,7 +142,11 @@
               <img src="img/star.png" alt="Star" class="hotel__img" />
               <img src="img/star.png" alt="Star" class="hotel__img" />
             </div>
-            <div class="hotel__name">
+            <div
+              class="hotel__name"
+              data-aos="zoom-out-right"
+              data-aos-delay="300"
+            >
               <div class="hotel__block">
                 <h3 class="hotel__title">GRAND HILTON HOTEL</h3>
                 <span class="hotel__offer">Flash Offer</span>
@@ -137,14 +157,22 @@
               </div>
             </div>
           </div>
-          <div class="hotel__rattings">
+          <div
+            class="hotel__rattings"
+            data-aos="zoom-out-right"
+            data-aos-delay="400"
+          >
             <span class="hotel__user-ratting">User Rattings</span>
 
             4.5/<span class="hotel__num hotel__num_size_s">5</span>
           </div>
         </div>
         <div class="hotel-bottom">
-          <div class="hotel-bottom__slider">
+          <div
+            class="hotel-bottom__slider"
+            data-aos="zoom-out-right"
+            data-aos-delay="500"
+          >
             <div class="swiper swiper-hotel">
               <div class="swiper-wrapper">
                 <div class="swiper-slide swiper-hotel__slide">
@@ -195,7 +223,11 @@
               <button class="slider-button slider-button--next"></button>
             </div>
           </div>
-          <div class="hotel-bottom__card hotel-card">
+          <div
+            class="hotel-bottom__card hotel-card"
+            data-aos="zoom-out-right"
+            data-aos-delay="500"
+          >
             <div class="hotel-card__info">
               <div class="hotel-price">
                 <span class="hotel-price__text">price starts as</span>
@@ -661,6 +693,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
   </body>
