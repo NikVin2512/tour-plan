@@ -49,7 +49,7 @@ $(".form").each(function(){
     },
     messages: {
       name: "Please specify your name. Minimum 3 letters ",
-      phone: "Your phone number must be in the format of +7(999) 999-99-99",
+      phone: "Your number in the format +7(999) 999-99-99",
       email: {
         required: "We need your email address to contact you",
         email: "Your email address must be in the format of name@domain.com"
