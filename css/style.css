@@ -1495,9 +1495,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
@@ -1601,6 +1601,7 @@ body {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+  margin: auto 0;
 }
 
 .footer__map, .footer__phone-call, .footer__email {
