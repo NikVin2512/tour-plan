@@ -214,7 +214,9 @@
                 <span class="hotel-booking__text">Quick Booking</span>
                 <a href="tel:12100" class="hotel-booking__number">12100</a>
               </div>
-              <button class="hotel-card__button">View Other Options</button>
+              <button data-toggle="modal" class="hotel-card__button">
+                View Other Options
+              </button>
             </div>
             <div class="hotel-map">
               <iframe
@@ -566,20 +568,23 @@
           </div>
           <div class="footer__send-form">
             <h3 class="footer__title">Send us a message</h3>
-            <form class="footer__form" action="#">
+            <form class="footer__form" action="send.php" method="post">
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Your Full Name*"
+                name="name"
               />
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Phone Number*"
+                name="phone"
               />
               <textarea
                 class="footer__message"
                 placeholder="Message"
+                name="message"
               ></textarea>
 
               <button class="button footer__button" type="submit">Send</button>
@@ -601,7 +606,41 @@
         </div>
       </div>
     </footer>
+    <div class="modal__bg"></div>
+    <div class="modal">
+      <a href="#"><img src="img/modal-close.svg" class="modal__close" /></a>
+      <h3 class="modal__title">Booking</h3>
+      <form class="modal__form" action="send.php" method="post">
+        <input
+          type="text"
+          class="input modal__input"
+          placeholder="Your Full Name*"
+          name="name"
+        />
+        <input
+          type="text"
+          class="input modal__input"
+          placeholder="Phone Number*"
+          name="phone"
+        />
+        <input
+          type="text"
+          class="input modal__input"
+          placeholder="Email*"
+          name="email"
+        />
+        <textarea
+          class="message modal__message"
+          placeholder="Message"
+          name="message"
+        ></textarea>
+
+        <button class="button modal__button" type="submit">Send</button>
+        <span class="modal__required">* Required Fields</span>
+      </form>
+    </div>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
   </body>

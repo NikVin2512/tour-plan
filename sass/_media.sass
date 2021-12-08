@@ -149,7 +149,7 @@
     top: 0
     left: 0
     right: 0
-    z-index: 199
+    z-index: 109
     &-top
     &__search
       margin: 0 0 19px 0
@@ -397,6 +397,23 @@
       order: 2
     &__infomation
       margin-top: 30px
+  .modal
+    padding: 10px 15px
+    width: 90%
+    max-height: 95%
+    top: 10px
+    left: 50%
+    transform: translateX(-50%)
+    overflow-y: scroll
+    &__input
+      height: 40px
+    &__button
+      order: 2
+      padding: 15px 65px
+    &__required
+      margin-bottom: 10px
+    &__message
+      height: 80px
 @media (max-width: 480px)
   .newsletter
     &__wrap
