@@ -1702,7 +1702,7 @@ body {
   opacity: 1;
 }
 
-.modal__bg {
+.modal-bg {
   position: fixed;
   top: 0;
   left: 0;
@@ -1714,7 +1714,7 @@ body {
   opacity: 0;
 }
 
-.modal__bg--active {
+.modal-bg--active {
   visibility: visible;
   opacity: 1;
 }

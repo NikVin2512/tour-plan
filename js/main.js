@@ -12,16 +12,16 @@ var modalClose = $('.modal__close');
 
 function openModal() {
   var modalWindow = $('.modal');
-  var modalBg = $('.modal__bg');
+  var modalBg = $('.modal-bg');
   modalWindow.addClass('modal--active');
-  modalBg.addClass('modal__bg--active');
+  modalBg.addClass('modal-bg--active');
 }
 
 function closeModal(event) {
   var modalWindow = $('.modal');
-  var modalBg = $('.modal__bg');
+  var modalBg = $('.modal-bg');
   modalWindow.removeClass('modal--active');
-  modalBg.removeClass('modal__bg--active');
+  modalBg.removeClass('modal-bg--active');
   event.preventDefault();
 }
 $(document).on('keydown',function(event) {
