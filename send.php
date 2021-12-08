@@ -16,8 +16,9 @@ $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
 <b>Почта:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
-<b>Email для связи:</b><br>$email"
+<b>Email для связи:</b><br>$email<br>
+<b>Сообщение:</b><br>$message"
+
 ;
 
 // Настройки PHPMailer
@@ -31,13 +32,11 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'nikolay.vinogradov.a@gmail.com
-    '; // Логин на почте
-    $mail->Password   = 'Kraftway1231230'; // Пароль на почте
+    $mail->Username   = 'nalivkinv163@gmail.com'; // Логин на почте
+    $mail->Password   = 'cm2093umck0)3-1'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('nikolay.vinogradov.a@gmail.com
-    ', 'Nikolay Vinogradov'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('nalivkinv163@gmail.com', 'Виталий Наливкин'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('was.bic@gmail.com');  

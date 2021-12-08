@@ -8,13 +8,13 @@
   &__info
     display: flex
     flex-direction: column
-  &__star
+    align-items: start
   &__img
     margin-right: -2px
   &__title
     margin: 0
     padding: 0
-    flex-basis: 50%
+    flex-basis: 100%
     display: inline-block
     margin-right: 14px
     font-size: 24px
@@ -32,18 +32,18 @@
     color: #fff
     margin-top: 10px
   &__block
-    position: relative
+    display: flex
+    align-items: center
+    justify-content: start
   &__offer
-    position: absolute
-    top: 5px
-    width: 70px
+    max-width: 70px
     height: 20px
     font-size: 10px
     padding: 4px 9px
     border-radius: 3px
     background-color: $primary
     color: #fff
-    flex-basis: 50%
+    flex-basis: 25%
   &__rattings
     display: flex
     flex-wrap: wrap
