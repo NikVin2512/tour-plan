@@ -566,20 +566,23 @@
           </div>
           <div class="footer__send-form">
             <h3 class="footer__title">Send us a message</h3>
-            <form class="footer__form" action="#">
+            <form class="footer__form" action="send.php" method="post">
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Your Full Name*"
+                name="name"
               />
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Phone Number*"
+                name="phone"
               />
               <textarea
                 class="footer__message"
                 placeholder="Message"
+                name="message"
               ></textarea>
 
               <button class="button footer__button" type="submit">Send</button>
