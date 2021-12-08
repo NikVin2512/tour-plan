@@ -18,10 +18,15 @@ function openModal() {
 }
 
 function closeModal(event) {
-  event.preventDefault();
   var modalWindow = $('.modal');
   var modalBg = $('.modal__bg');
   modalWindow.removeClass('modal--active');
   modalBg.removeClass('modal__bg--active');
+  event.preventDefault();
 }
+$(document).on('keydown',function(event) {
+  if (event.keyCode == 27) {
+      closeModal();
+   }
+});
 });
