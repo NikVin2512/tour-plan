@@ -352,6 +352,7 @@ body {
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
+  background: #F5FAFE;
 }
 
 .container {
@@ -549,8 +550,8 @@ body {
 .hotel__title {
   margin: 0;
   padding: 0;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
   display: inline-block;
   margin-right: 14px;
   font-size: 24px;
@@ -582,7 +583,7 @@ body {
           align-items: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
+          justify-content: flex-start;
 }
 
 .hotel__offer {
@@ -593,8 +594,8 @@ body {
   border-radius: 3px;
   background-color: #EC1F46;
   color: #fff;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
 }
 
 .hotel__rattings {
@@ -948,7 +949,7 @@ body {
   width: 60px;
   height: 18px;
   padding: 4px 9px;
-  border-radius: 3px;
+  border-radius: 0 3px 3px 0;
   font-size: 8px;
   background-color: #EC1F46;
   color: #fff;
@@ -2201,6 +2202,10 @@ body {
   .hotel__info {
     padding: 35px 0 20px 0;
   }
+  .hotel__title {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
   .hotel__offer {
     position: absolute;
     top: -30px;
@@ -2359,11 +2364,27 @@ body {
 }
 
 @media (max-width: 576px) {
+  .navbar-top {
+    padding-right: 20px;
+  }
+  .horizontal-logo img {
+    max-width: 99px;
+  }
   .hotel__rattings {
     display: none;
   }
   .hotel-bottom {
     padding-bottom: 40px;
+  }
+  .hotel__info {
+    padding: 20px 0;
+  }
+  .hotel__star {
+    top: -10px;
+    right: 20px;
+  }
+  .hotel__subtitle {
+    max-width: 280px;
   }
   .slider-button {
     width: 11px;
@@ -2417,6 +2438,13 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .cards-hotels__offer--one {
+    top: 26px;
+    width: 60px;
+    height: 18px;
+    padding: 4px 9px;
+    font-size: 8px;
   }
   .cards-hotels__descp {
     display: none;

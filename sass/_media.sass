@@ -234,6 +234,8 @@
       margin-bottom: 20px
     &__info
       padding: 35px 0 20px 0
+    &__title
+      flex-basis: 100%
     &__offer
       position: absolute
       top: -30px
@@ -339,11 +341,27 @@
       &--one
         margin-top: 14px
 @media (max-width: 576px)
+  .navbar
+    &-top
+      padding-right: 20px
+
+  .horizontal-logo
+    img
+      max-width: 99px
   .hotel
     &__rattings
       display: none
     &-bottom
       padding-bottom: 40px
+    &__info
+      padding: 20px 0
+    &__star
+      top: -10px
+      right: 20px
+    &__subtitle
+      max-width: 280px
+  // .bread-crumbs
+  //   max-height: 50px
   .slider
     &-button
       width: 11px
@@ -383,6 +401,13 @@
         grid-column-start: 1
         grid-column-end: 1
         flex-direction: column
+    &__offer
+      &--one
+        top: 26px
+        width: 60px
+        height: 18px
+        padding: 4px 9px
+        font-size: 8px
     &__descp
       display: none
     &__star
@@ -390,6 +415,7 @@
     &__img
       &--one
         height: 200px
+
   .footer
     padding-top: 69px
     padding-bottom: 21px
