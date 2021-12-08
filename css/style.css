@@ -2262,6 +2262,10 @@ body {
   }
   .activities {
     padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .activities-title {
+    line-height: 23px;
   }
   .activities__cards {
     grid-gap: 20px;
@@ -2358,6 +2362,9 @@ body {
   .hotel__rattings {
     display: none;
   }
+  .hotel-bottom {
+    padding-bottom: 40px;
+  }
   .slider-button {
     width: 11px;
     height: 12px;
@@ -2427,6 +2434,9 @@ body {
   .footer__wrapper {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (minmax(127px, min-content))[1] 67px;
+        grid-template-rows: repeat(1, minmax(127px, -webkit-min-content)) 67px;
+        grid-template-rows: repeat(1, minmax(127px, min-content)) 67px;
     grid-row-gap: 30px;
   }
   .footer__logo img {
@@ -2446,12 +2456,26 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0;
+  }
+  .footer__title {
+    margin-bottom: 15px;
   }
   .footer__title--mb-2 {
     margin-bottom: 20px;
+  }
+  .footer__title--mb-3 {
+    margin-bottom: 20px;
+  }
+  .footer__title--mb-4 {
+    margin-bottom: 0;
+  }
+  .footer__subtitle {
+    margin-bottom: 20px;
+    margin-top: 26px;
   }
   .footer__categories {
     -ms-grid-column: 1;
@@ -2484,6 +2508,8 @@ body {
     -ms-grid-row: 6;
     -ms-grid-row-span: 1;
     grid-row: 6 / 7;
+    max-width: 91%;
+    padding: 0;
   }
   .footer__send-form {
     -ms-grid-column: 1;
@@ -2492,16 +2518,17 @@ body {
     -ms-grid-row: 7;
     -ms-grid-row-span: 1;
     grid-row: 7 / 8;
-  }
-  .footer__title {
-    margin-bottom: 15px;
+    margin-bottom: 0;
+    padding-top: 30px;
   }
   .footer__input-group {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    -ms-flex-preferred-size: 91%;
+        flex-basis: 91%;
   }
   .footer__message {
     margin-bottom: 15px;
+    -ms-flex-preferred-size: 91%;
+        flex-basis: 91%;
   }
   .footer__required {
     -ms-flex-preferred-size: 100%;
@@ -2552,7 +2579,9 @@ body {
     width: 280px;
   }
   .packages__title {
+    line-height: 23px;
     font-size: 18px;
+    margin-bottom: 35px;
   }
   .reviews {
     padding-bottom: 50px;
@@ -2575,6 +2604,7 @@ body {
   }
   .reviews-title {
     font-size: 18px;
+    line-height: 23px;
   }
   .activities__cards {
     margin-top: 36px;
