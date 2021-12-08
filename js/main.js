@@ -29,4 +29,27 @@ $(document).on('keydown',function(event) {
       closeModal();
    }
 });
+// Validate Form
+$(".form").each(function(){
+  $(this).validate({
+    errorClass: 'invalid',
+    rules: {
+      name: "required",
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      name: "Please specify your name",
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com"
+      }
+    }
+  });
+});
+$(document).ready(function(){
+  $('.phone_us').mask('+7(000) 000-00-00');
+});
 });
