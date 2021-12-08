@@ -560,6 +560,16 @@ body {
   line-height: 15px;
 }
 
+.hotel__back {
+  padding: 15px 39px;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 10px;
+}
+
 .hotel__block {
   position: relative;
 }
@@ -678,7 +688,7 @@ body {
   line-height: 19px;
   cursor: pointer;
   margin-top: 9px;
-  padding: 13px 84px;
+  padding: 13px 70px;
 }
 
 .hotel-map {
@@ -1751,7 +1761,6 @@ body {
   z-index: 111;
   visibility: hidden;
   opacity: 0;
-  overflow-y: scroll;
 }
 
 .modal--active {
@@ -2066,6 +2075,10 @@ body {
   }
   .footer-info__block {
     margin-right: 0;
+  }
+  .modal {
+    max-height: 95%;
+    overflow-y: scroll;
   }
 }
 
