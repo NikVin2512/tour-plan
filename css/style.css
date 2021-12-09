@@ -353,6 +353,7 @@ body {
       -ms-hyphens: auto;
           hyphens: auto;
   background: #F5FAFE;
+  position: relative;
 }
 
 .container {
@@ -1327,7 +1328,7 @@ body {
   line-height: 160%;
   text-align: justify;
   color: #333333;
-  margin-top: 31px;
+  margin-top: 29px;
   margin-bottom: 0;
 }
 
@@ -1501,7 +1502,7 @@ body {
   line-height: 23px;
   color: #fff;
   text-transform: uppercase;
-  margin: 0 0 14px 0;
+  margin: 0 0 19px 0;
   padding: 0;
 }
 
@@ -1649,7 +1650,7 @@ body {
 }
 
 .footer__title--mb-2 {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .footer__block-icon {
@@ -1663,6 +1664,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .footer__block-icon img {
@@ -1897,8 +1899,8 @@ body {
     margin-top: 37px;
   }
   .footer__wrapper {
-    -ms-grid-columns: 220px 200px 270px 200px;
-        grid-template-columns: 220px 200px 270px 200px;
+    -ms-grid-columns: 200px 200px 270px 200px;
+        grid-template-columns: 200px 200px 270px 200px;
   }
   .footer-info__block {
     margin-right: 200px;
@@ -1928,6 +1930,12 @@ body {
   }
   .navbar__search {
     margin-left: 50px;
+  }
+  .button:hover {
+    cursor: default;
+  }
+  a:hover {
+    cursor: default;
   }
   .search__input {
     width: 340px;
@@ -1959,10 +1967,7 @@ body {
     padding-right: 20px;
   }
   .hotel-card__button {
-    margin-top: 15px;
-  }
-  .hotel-booking__text, .hotel-booking__number {
-    line-height: 18px;
+    margin-top: 10px;
   }
   .hotel-map {
     width: 340px;
@@ -1984,7 +1989,7 @@ body {
   }
   .reviews-slider__item {
     max-width: 579px;
-    padding: 50px 64px 30px 60px;
+    padding: 48px 58px 30px 64px;
   }
   .reviews-slider__item::after, .reviews-slider__item::before {
     display: none;
@@ -1996,7 +2001,7 @@ body {
     right: 0;
   }
   .activities {
-    padding-bottom: 53px;
+    padding-bottom: 43px;
   }
   .activities__cards {
     -ms-flex-wrap: wrap;
@@ -2005,7 +2010,7 @@ body {
   .card {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
-    height: 250px;
+    height: 255px;
     margin-bottom: 25px;
   }
   .packages__title {
@@ -2022,8 +2027,14 @@ body {
     margin-top: 52px;
   }
   .footer {
-    padding-top: 73px;
+    padding-top: 70px;
     padding-bottom: 33px;
+  }
+  .footer__map {
+    margin-bottom: 23px;
+  }
+  .footer__map, .footer__phone-call, .footer__email {
+    padding-left: 45px;
   }
   .footer__wrapper {
     -ms-grid-columns: 170px 270px 200px 200px;
@@ -2043,19 +2054,22 @@ body {
     max-width: 98px;
   }
   .footer__title {
-    margin-bottom: 18px;
+    margin-bottom: 15px;
   }
   .footer__title--mb-2 {
     margin-bottom: 0;
   }
   .footer__title--mb-3 {
-    margin-bottom: 34px;
+    margin-bottom: 33px;
   }
   .footer__title--mb-4 {
     margin-bottom: 6px;
   }
   .footer__subtitle {
     margin-bottom: 22px;
+  }
+  .footer__list {
+    padding-top: 5px;
   }
   .footer__social {
     -ms-grid-row: 1;
@@ -2106,7 +2120,7 @@ body {
     -ms-grid-column-span: 3;
     grid-column: 1 / 4;
     max-width: 539px;
-    padding-top: 25px;
+    padding-top: 22px;
     margin-bottom: 60px;
   }
   .footer__infomation {
@@ -2140,6 +2154,10 @@ body {
     left: 0;
     right: 0;
     z-index: 109;
+    max-height: 70px;
+  }
+  .navbar-top {
+    padding: 24px 0;
   }
   .navbar__search {
     margin: 0 0 19px 0;
@@ -2214,7 +2232,7 @@ body {
   }
   .hotel__top {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   .hotel__info {
     padding: 35px 0 20px 0;
@@ -2283,7 +2301,7 @@ body {
     right: 32%;
   }
   .activities {
-    padding-top: 40px;
+    padding-top: 37px;
     padding-bottom: 60px;
   }
   .activities-title {
@@ -2389,7 +2407,7 @@ body {
     padding-bottom: 40px;
   }
   .hotel__info {
-    padding: 20px 0;
+    padding: 14px 0;
   }
   .hotel__star {
     top: -10px;
@@ -2400,6 +2418,9 @@ body {
   }
   .hotel-map {
     height: 172px;
+  }
+  .hotel-booking {
+    padding-right: 3px;
   }
   .hotel-card__info {
     padding: 27px 21px 24px 22px;
@@ -2433,6 +2454,9 @@ body {
   .card {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .card:nth-child(2) {
+    margin-bottom: 28px;
   }
   .card:last-child {
     margin-bottom: 0;
@@ -2483,13 +2507,20 @@ body {
   .footer__wrapper {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-    -ms-grid-rows: (minmax(127px, min-content))[1] 67px;
-        grid-template-rows: repeat(1, minmax(127px, -webkit-min-content)) 67px;
-        grid-template-rows: repeat(1, minmax(127px, min-content)) 67px;
+    -ms-grid-rows: (minmax(123px, min-content))[1] 67px;
+        grid-template-rows: repeat(1, minmax(123px, -webkit-min-content)) 67px;
+        grid-template-rows: repeat(1, minmax(123px, min-content)) 67px;
     grid-row-gap: 30px;
   }
   .footer__logo img {
     width: 104px;
+  }
+  .footer__list {
+    padding-top: 0;
+  }
+  .footer__map, .footer__phone-call, .footer__email {
+    padding-left: 30px;
+    padding-right: 20px;
   }
   .footer__social {
     -ms-grid-column: 1;
@@ -2510,22 +2541,26 @@ body {
             justify-content: flex-start;
     margin: 0;
   }
+  .footer__block-icon {
+    margin-bottom: 0;
+  }
   .footer__title {
     margin-bottom: 15px;
-    line-height: 20px;
+    line-height: 23px;
   }
   .footer__title--mb-2 {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
   .footer__title--mb-3 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .footer__title--mb-4 {
     margin-bottom: 0;
   }
   .footer__subtitle {
     margin-bottom: 20px;
-    margin-top: 26px;
+    margin-top: 22px;
+    padding-right: 10px;
   }
   .footer__categories {
     -ms-grid-column: 1;
@@ -2558,7 +2593,7 @@ body {
     -ms-grid-row: 6;
     -ms-grid-row-span: 1;
     grid-row: 6 / 7;
-    padding: 15px 0 0 0;
+    padding: 7px 0 0 0;
   }
   .footer__send-form {
     -ms-grid-column: 1;
@@ -2571,13 +2606,13 @@ body {
     padding-top: 30px;
   }
   .footer__input-group {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    -ms-flex-preferred-size: 98%;
+        flex-basis: 98%;
   }
   .footer__message {
     margin-bottom: 15px;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    -ms-flex-preferred-size: 98%;
+        flex-basis: 98%;
   }
   .footer__required {
     -ms-flex-preferred-size: 100%;
