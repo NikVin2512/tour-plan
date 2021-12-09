@@ -380,6 +380,10 @@ body {
   color: #EC1F46;
 }
 
+input:target, textarea:target, button:target, a:target {
+  outline: #EC1F46 solid 1px;
+}
+
 .navbar {
   background-color: #fff;
 }
