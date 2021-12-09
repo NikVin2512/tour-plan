@@ -379,6 +379,10 @@ body {
   color: #EC1F46;
 }
 
+.navbar {
+  background-color: #fff;
+}
+
 .navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1547,6 +1551,16 @@ body {
   padding-top: 10px;
 }
 
+.footer__phone-call a {
+  color: #BDBDBD;
+  text-decoration: none;
+}
+
+.footer__email {
+  color: #BDBDBD;
+  text-decoration: none;
+}
+
 .footer__send-form {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
@@ -1984,12 +1998,12 @@ body {
   .activities__cards {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    grid-gap: 25px;
   }
   .card {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
     height: 250px;
+    margin-bottom: 25px;
   }
   .packages__title {
     font-size: 30px;
@@ -2272,11 +2286,9 @@ body {
   .activities-title {
     line-height: 23px;
   }
-  .activities__cards {
-    grid-gap: 20px;
-  }
   .card {
     height: 255px;
+    margin-bottom: 20px;
   }
   .card-title {
     max-width: 85%;
@@ -2415,6 +2427,9 @@ body {
   .card {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .card:last-child {
+    margin-bottom: 0;
   }
   .card__image {
     width: 100%;

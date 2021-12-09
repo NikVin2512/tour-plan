@@ -96,10 +96,10 @@
     padding-bottom: 73px
     &__cards
       flex-wrap: wrap
-      grid-gap: 25px
   .card
     flex-basis: 48%
     height: 250px
+    margin-bottom: 25px
   .packages
     &__title
       font-size: 30px
@@ -281,9 +281,10 @@
     &-title
       line-height: 23px
     &__cards
-      grid-gap: 20px
+      // grid-gap: 20px
   .card
     height: 255px
+    margin-bottom: 20px
     &-title
       max-width: 85%
   .cards-hotels
@@ -387,6 +388,8 @@
         right: 25%
   .card
     flex-basis: 100%
+    &:last-child
+      margin-bottom: 0
     &__image
       width: 100%
   .packages
